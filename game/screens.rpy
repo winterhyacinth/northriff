@@ -100,6 +100,12 @@ screen say(who, what):
     window:
         id "window"
 
+    if who == norena:
+        add "images/northpotrait.png":
+            xpos 50
+            ypos 950
+            zoom 1.2
+
         if who is not None:
 
             window:
