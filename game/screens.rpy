@@ -112,8 +112,8 @@ screen say(who, what):
     if who == "Norena (You)":
         add "images/northportrait.png":
             xpos 50
-            ypos 815
-            zoom 3.5
+            ypos 800
+            zoom 4.1
 
 
     ## If there's a side image, display it above the text. Do not display on
