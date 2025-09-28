@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 107: Line is indented, but the preceding text statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    ypos -30
-    ^
+File "game/script.rpy", line 55: end of line expected.
+    "stay silent": jump silent
+                   ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Sun Sep 28 16:18:12 2025
+Sun Sep 28 17:10:13 2025

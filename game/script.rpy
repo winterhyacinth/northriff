@@ -4,6 +4,11 @@
 # name of the character.
 define void = Character("???")
 define norena = Character("Norena (You)")
+define seren = Character("Seren")
+
+image seren happy = "seren happy.png"
+image seren sad = "seren sad.png"
+image seren talk = "seren talk.png"
 image bg club = "bg club.png"
 image norena neutral2 = "norena neutral2.png"
 # The game starts here.
@@ -41,4 +46,35 @@ label start:
     norena "We lost each other in the end, anyways"
     # This ends the game.
 
+    show norena neutral2 at left
+    show seren talk at right
+    seren "North! Are you ready for our gig tonight? Vera and I were just fixing our guitars."
+    show seren happy at right
+    norena "Oh yeah, but can I talk to you about something real quick?"
+
+    menu:
+        "stay silent": 
+            jump silent
+        "tell her you know about the offer and ask her to stay":
+            jump stay
+        "tell her you know and encourage her to accept it":
+            jump encourage
     return
+    
+
+label stay:
+    scene bg club
+    void "Why are you so eager to sacrifice everyone but yourself?"
+    return
+
+label silent:
+    scene bg club
+    void "You stay silent. You fail to change."
+    return
+
+label encourage:
+    scene bg club
+    void "Do you think your actions will change what already happened?"
+    norena "Isn't that the whole point of this?"
+    return
+
