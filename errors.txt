@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/screens.rpy", line 107: Line is indented, but the preceding text statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    ypos -30
+    ^
+
+Ren'Py Version: Ren'Py 8.4.1.25072401
+Sun Sep 28 16:18:12 2025

@@ -97,23 +97,23 @@ style frame:
 
 screen say(who, what):
 
+    # Main dialogue window
     window:
         id "window"
+        style "say_window"
 
-    if who == norena:
-        add "images/northpotrait.png":
-            xpos 50
-            ypos 950
-            zoom 1.2
-
-        if who is not None:
-
-            window:
-                id "namebox"
-                style "namebox"
-                text who id "who"
+        if who:
+            text who id "who":
+                ypos -20  # Move it upward
 
         text what id "what"
+
+    # Show portrait only when 'who' is 'norena'
+    if who == "Norena (You)":
+        add "images/northportrait.png":
+            xpos 50
+            ypos 815
+            zoom 3.5
 
 
     ## If there's a side image, display it above the text. Do not display on

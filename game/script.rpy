@@ -11,7 +11,7 @@ image norena neutral2 = "norena neutral2.png"
 label start:
     scene black with fade
 
-    void "You've lived this once before, haven't you?"
+    void "You\'ve lived this once before, haven\'t you?"
     void "This time you don't get to look away"
     void "Billiam Bart gave his voice. Seren gave her future." 
     void "You? You gave nothing but excuses. Time isn't a mirror. Look into it. And fix what you've done."
