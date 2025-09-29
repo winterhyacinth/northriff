@@ -2,9 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 55: end of line expected.
-    "stay silent": jump silent
-                   ^
+File "game/script.rpy", line 69: unterminated string literal
+    norena"I heard about the agent coming to see you tonight. Your voice and guitar skills are some of the best I've heard, it's nice you gained you some recognition.
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Sun Sep 28 17:10:13 2025
+Sun Sep 28 19:00:52 2025

@@ -73,6 +73,7 @@ label stay:
     seren "Mhm...I suppose it would be easier to stay. But, for now, I have to go get ready for our gig tonight. I think we have many more in our future. Together."
     hide seren with dissolve
     void "Why are you so eager to sacrifice everyone but yourself?"
+    jump nextScene
     return
 
 label silent:
@@ -83,6 +84,7 @@ label silent:
     seren "Fair enough! I'll see you later at our last practice."
     hide seren with dissolve
     void "You stay silent. You fail to change."
+    jump nextScene
 
     return
 
@@ -103,9 +105,13 @@ label encourage:
     seren "But thank you, really. I was scared about telling you guys. Leaving this place...we grew up here together."
     seren "I should go now."
     hide seren with dissolve
-
     void "Do you think your actions will change what already happened? Tonight is bound to go terrible."
-    norena "Isn't that the whole point of this?"
-    
+    norena "Isn't that the whole point of this? To change it?"
+    jump nextScene
+
     return
 
+label nextScene:
+    scene bg club
+    show norena neutral2
+    return
